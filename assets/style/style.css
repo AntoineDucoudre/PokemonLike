@@ -1,0 +1,13 @@
+html{
+    background-image: url("../img/platine.jpg")
+}
+
+    .game{
+    display: flex;
+    justify-content: center;
+    }
+
+    .display{
+    border: solid;
+    display: flex;
+    }
