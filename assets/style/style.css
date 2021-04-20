@@ -2,12 +2,12 @@ html{
     background-image: url("../img/platine.jpg")
 }
 
-    .game{
+.game {
     display: flex;
     justify-content: center;
-    }
+}
 
-    .display{
+.display {
     border: solid;
     display: flex;
-    }
+}
