@@ -10,6 +10,9 @@
         arcade: {
             gravity: { y: 0 } //topdown game, so no gravity
         }
+    },
+    dom: {
+        createContainer: true
     }
 };
 const game = new Phaser.Game(config);
