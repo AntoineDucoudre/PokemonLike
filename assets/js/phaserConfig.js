@@ -4,7 +4,7 @@
     width: 1200,
     height: 800,
     parent: "game-container",
-    scene: [SceneOne, SceneTwo],
+    scene: [SceneOne],
     physics: {
         default: "arcade",
         arcade: {
@@ -12,7 +12,7 @@
         }
     },
     dom: {
-        createContainer: true
+        createContainer: false
     }
 };
 const game = new Phaser.Game(config);

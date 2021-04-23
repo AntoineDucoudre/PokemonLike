@@ -110,28 +110,35 @@ var SceneOne = new Phaser.Class({
             else if (prevVelocity.y > 0) player.anims.play("misa-front", true);
         }
 
-
+        
         // TODO: switch verification check on player.location if good execute script under
-        // checkPokemonEncounter(){
+        // checkPokemonEncounter() {
         //     var isEncounter =  Math.floor(Math.random() * 100) > this.pokemonEncounterChance;
         //     if(isEncounter){
         //         this.pokemonEncounter();
         //     }
         // }
-
+        // getPlayerLocation() {
+        //     tiledX = Math.round(player.x/99)
+        //     tiledY = Math.round(player.y/99)
+        // }
         // pokemonEncounter(){
-           // this.scene.sleep("SceneOne");
-           // this.scene.run("SceneTwo");
+            //         frame = parent.document.getElementById("frame");
+            //         console.log(frame)
+            //         alert("Fight !")
+            //         frame.src = "poke.html"
         // }
         this.time.addEvent({
-            delay: 3000,
+            delay: 7000,
             loop: false,
             callback: () => {
                 this.scene.sleep("SceneOne");
-                this.scene.run("SceneTwo", {
-                    "message" : "Game Over"
-                });
-                alert("Changement de scene")
+                // this.scene.run("SceneTwo", {
+                // });
+                frame = parent.document.getElementById("frame");
+                console.log(frame)
+                alert("Fight !")
+                frame.src = "poke.html"
             }
         })
         //

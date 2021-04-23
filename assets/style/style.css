@@ -11,3 +11,9 @@ html{
     border: solid;
     display: flex;
 }
+
+iframe{
+    overflow:hidden;
+    justify-content: center;
+    display: flex;
+}
