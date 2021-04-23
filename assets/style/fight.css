@@ -1,10 +1,54 @@
 th, td{
     padding:15px;
 }
+body{
+    background-image: url(../img/platine.jpg);
+}
+#viewport{
+position: fixed;
+top: 0px;
+left: 20vw;
+right: 20vw;
+height: 60vw;
+width: 60vw;
+background: url(http://orig08.deviantart.net/50bb/f/2014/298/2/1/pokemon_x_and_y_battle_background_10_by_phoenixoflight92-d843fov.png) no-repeat;
+}
+#pk1 {
+    position:absolute; left:130px; top:300px;
+}
+#pk2 {
+    position:absolute; left:450px; top:170px;
+
+}
 .btn{
     display:block;
     width:100%;
+    border-radius: 0.7em;
+    box-shadow: 0 3px 0 black;
+    color:red;
+    font-size: 1em;
+    font-weight: 800;
+    /* text-shadow: 0 1px 0 black; */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 148px;
+    height: 50px;
+    margin-left: -(148px/2);
+    margin-top: -(70px/2);
 }
 p{
     font-family: consolas;
+}
+#m0 {
+    position:absolute; left:415px; top:320px;
+}
+#m1 {
+    position:absolute; left: 565px; top:320px;
+}
+#m2 {
+    position:absolute; left:415px; top:375px;
+}
+#m3 {
+    position:absolute; left: 565px; top:375px;
 }
