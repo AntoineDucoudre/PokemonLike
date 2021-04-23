@@ -56,7 +56,7 @@ var SceneOne = new Phaser.Class({
         camera.startFollow(player);
         camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
 
-        this.pokemonEncounterChance = 70;
+        this.pokemonEncounterChance = 995;
 
         cursors = this.input.keyboard.createCursorKeys();
         // const debugGraphics = this.add.graphics().setAlpha(0.5);
@@ -109,45 +109,39 @@ var SceneOne = new Phaser.Class({
             else if (prevVelocity.y < 0) player.anims.play("misa-back", true);
             else if (prevVelocity.y > 0) player.anims.play("misa-front", true);
         }
-
-        
         // TODO: switch verification check on player.location if good execute script under
-        // checkPokemonEncounter() {
-        //     var isEncounter =  Math.floor(Math.random() * 100) > this.pokemonEncounterChance;
-        //     if(isEncounter){
-        //         this.pokemonEncounter();
-        //     }
-        // }
-        // getPlayerLocation() {
-        //     tiledX = Math.round(player.x/99)
-        //     tiledY = Math.round(player.y/99)
-        // }
-        // pokemonEncounter(){
-            //         frame = parent.document.getElementById("frame");
-            //         console.log(frame)
-            //         alert("Fight !")
-            //         frame.src = "poke.html"
-        // }
-        this.time.addEvent({
-            delay: 7000,
-            loop: false,
-            callback: () => {
-                this.scene.sleep("SceneOne");
-                // this.scene.run("SceneTwo", {
-                // });
+        if(player.x < 700 && player.x > 600 && player.y > 500 && player.y < 600){
+            var isEncounter =  Math.random() * 1000;
+             if(isEncounter > this.pokemonEncounterChance){
                 frame = parent.document.getElementById("frame");
                 console.log(frame)
                 alert("Fight !")
                 frame.src = "poke.html"
-            }
-        })
-        //
-        //if(this.player.position.x > 37 && this.player.position.y < 35){
-        // tempValue = 0;
-        //  tempValue = Math.random(1, 5);
-        //  if(tempValue === 3){
-
-        // }
+             }
+        }
+        else if(player.x < 990 && player.x > 870 && player.y > 500 && player.y < 600){
+            var isEncounter =  Math.random() * 1000;
+             if(isEncounter > this.pokemonEncounterChance){
+                frame = parent.document.getElementById("frame");
+                console.log(frame)
+                alert("Fight !")
+                frame.src = "poke.html"
+             }
+        }
+        
+        // this.time.addEvent({
+        //     delay: 7000,
+        //     loop: false,
+        //     callback: () => {
+        //         this.scene.sleep("SceneOne");
+        //         // this.scene.run("SceneTwo", {
+        //         // });
+        //         frame = parent.document.getElementById("frame");
+        //         console.log(frame)
+        //         alert("Fight !")
+        //         frame.src = "poke.html"
+        //     }
+        // })
         // }//
     }
-});
+})

@@ -2,18 +2,17 @@ html{
     background-image: url("../img/platine.jpg")
 }
 
-.game {
-    display: flex;
-    justify-content: center;
+body{
+    position: absolute;
+    left: 15%;
 }
 
-.display {
-    border: solid;
-    display: flex;
+.game {
+    margin-top: 50px;
 }
 
 iframe{
-    overflow:hidden;
-    justify-content: center;
-    display: flex;
+    overflow: hidden;
+    /* justify-content: center;
+    display: flex; */
 }
