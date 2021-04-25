@@ -11,6 +11,10 @@ var SceneTwo = new Phaser.Class({
             frameWidth: 64,
             frameHeight: 64,
        });
+       this.load.spritesheet("nurse", "../assets/img/nurse.png", {
+           frameWidth: 68,
+           frameHeight: 72,
+       })
        this.load.audio("pokemonCenterMusic", ["pokemonCenter.mp3"])
     },
     create: function () {
@@ -44,6 +48,16 @@ var SceneTwo = new Phaser.Class({
 
         this.physics.add.collider(player, worldLayer);
 
+        nurse = this.physics.add
+            .sprite(720, 680,"nurse")
+            .setScale(0.7)
+            .setSize(5, 10)
+            .setOffset(1, 3);
+
+
+
+
+
         const anims = this.anims;
         misaKeys = ["misa-right","misa-left","misa-front","misa-back","misa-right-walk","misa-left-walk","misa-back-walk","misa-front-walk"]
         starts = [4,8,0,12,8,4,12,0]
@@ -60,8 +74,6 @@ var SceneTwo = new Phaser.Class({
         const camera = this.cameras.main;
         camera.startFollow(player);
         camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
-
-        this.pokemonEncounterChance = 995;
 
         cursors = this.input.keyboard.createCursorKeys();
 

@@ -4,7 +4,7 @@
     width: 1200,
     height: 800,
     parent: "game-container",
-    scene: [SceneOne, SceneTwo, SceneThree],
+    scene: [SceneOne, SceneTwo, SceneThree, SceneFour],
     physics: {
         default: "arcade",
         arcade: {

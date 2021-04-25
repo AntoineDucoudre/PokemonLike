@@ -64,7 +64,7 @@ var SceneOne = new Phaser.Class({
         camera.startFollow(player);
         camera.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
 
-        this.pokemonEncounterChance = 995;
+        this.pokemonEncounterChance = 990;
         this.enterKey = this.input.keyboard.addKey('ENTER');
 
         cursors = this.input.keyboard.createCursorKeys();
@@ -121,11 +121,39 @@ var SceneOne = new Phaser.Class({
             else if (prevVelocity.y > 0) player.anims.play("misa-front", true);
         }
         
-        // Enter in a building/house
+        // Enter Pokemon Center
         if(player.x > 755 && player.x < 770 && player.y > 455 && player.y < 470 && cursors.up.isDown){
             roadMusic.stop();
             this.scene.stop('SceneOne');
             this.scene.run('SceneTwo');
+        }
+
+        // House top right
+        if(player.x > 845 && player.x < 860 && player.y > 695 && player.y < 710 && cursors.up.isDown){
+            roadMusic.stop();
+            this.scene.stop('SceneOne');
+            this.scene.run('SceneFour');
+        }
+
+        // House top left
+        if(player.x > 620 && player.x < 635 && player.y > 695 && player.y < 710 && cursors.up.isDown){
+            roadMusic.stop();
+            this.scene.stop('SceneOne');
+            this.scene.run('SceneFour');
+        }
+        
+        // // House down left
+        if(player.x > 660 && player.x < 675 && player.y > 855 && player.y < 870 && cursors.up.isDown){
+            roadMusic.stop();
+            this.scene.stop('SceneOne');
+            this.scene.run('SceneFour');
+        }
+        
+        // // House down right
+        if(player.x > 845 && player.x < 860 && player.y > 855 && player.y < 870 && cursors.up.isDown){
+            roadMusic.stop();
+            this.scene.stop('SceneOne');
+            this.scene.run('SceneFour');
         }
 
         // Pokemon Fight
