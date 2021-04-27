@@ -22,3 +22,10 @@
 
 - If you want to fight some Pokemon, just go into the grass sections, walk and you will probably encounter a pokemon few seconds later. <br>
 ![TEST](README/fight.gif "Fight")
+
+
+## Authors :
+- MICHEL Anthony
+- DUCOUDRE Antoine
+- TRAN Alex
+- TSOUMOU-BITA **TED-MAXENCE**
