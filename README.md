@@ -28,4 +28,4 @@
 - MICHEL Anthony
 - DUCOUDRE Antoine
 - TRAN Alex
-- TSOUMOU-BITA Ted
+- TSOUMOU-BITA Ted-Maxence
