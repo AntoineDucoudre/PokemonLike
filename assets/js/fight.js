@@ -80,8 +80,7 @@ let typeMatch = {
     'Lapras': [['water'], ['eletric', 'grass', 'fighting', 'rock'], ['ice']],
     'Mewtwo': [[''], ['ghost', 'dark', 'bug'], ['psychic', 'fighting']],
     'Alakazam': [[''], ['ghost', 'dark', 'bug'], ['psychic', 'fighting']],
-    'Entei': [[''], ['water', 'ground', 'rock', 'steel'], ['grass', 'bug','steel','ice','fairy']]
-    
+    'Entei': [[''], ['water', 'ground', 'rock', 'steel'], ['grass', 'bug','steel','ice','fairy']]  
 }
 function spawn(bool) {
     let p = pkmList[Math.floor(Math.random() * pkmList.length)];
