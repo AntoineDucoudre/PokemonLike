@@ -25,7 +25,3 @@
 
 
 ## Authors :
-- MICHEL Anthony
-- DUCOUDRE Antoine
-- TRAN Alex
-- TSOUMOU-BITA Ted-Maxence
